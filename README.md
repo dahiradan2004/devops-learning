@@ -1,2 +1,4 @@
-#Bash Battle Arena
-#Networking/n
+Bash Battle Arena 🎮
+
+
+Domain + EC2 + DNS 🌐
