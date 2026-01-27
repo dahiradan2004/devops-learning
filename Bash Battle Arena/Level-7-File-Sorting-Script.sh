@@ -7,4 +7,13 @@ do
     wc -c "$file"
 done | sort -n 
 
-    
+    new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
