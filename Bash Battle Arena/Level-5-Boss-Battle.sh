@@ -17,3 +17,19 @@ then
 fi
 echo "Battlefield contents:" 
 ls Battlefield
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line

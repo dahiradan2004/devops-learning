@@ -10,4 +10,14 @@ print_args() {
     fi
 }
 
-print_args "Level-1-Basics.sh"
+print_args "Level-1-Basics.sh"new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
+new line
