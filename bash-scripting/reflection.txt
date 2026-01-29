@@ -1,0 +1,21 @@
+challenge 1. Basic arithmetic calculator
+This script asks for two numbers and stores them in variables. Each arithmetic operation lives inside its own function using Bash arithmetic expansion with $(( )). The calculator function calls those functions using command substitution and prints the results. The script ends by calling the calculator function, which outputs addition, subtraction, multiplication, and division for the two inputs.
+
+challenge 2. Directory creation and file logging
+This script creates a directory called bash_demo and safely moves into it. It creates a file named demo.txt and prints a confirmation message showing the current directory name using basename. It then appends a line to the file with the current date, which records when the script created the file.
+
+challenge 3. File existence and permission check
+This script prompts for a filename and checks whether the file exists. If the file exists, it tests read, write, and execute permissions using Bash file test operators. Each permission prints a tick or a cross based on the result. If the file does not exist, the script prints a clear error message.
+
+challenge 4. Simple backup script
+This script asks for a source directory and creates a backup directory named after it. The backup folder name includes the current date and time for identification. The script copies all .txt files from the source directory into the backup directory. It finishes by counting how many .txt files were copied and prints a completion message.
+
+
+Key learnings
+Working with Bash clarified how strict syntax rules shape script behavior. Arithmetic works only inside $(( )) and small syntax mistakes break execution. Loops combined with wildcards showed why * expands differently from file*.txt depending on context. Command success flows through exit codes, and if relies fully on those codes rather than printed output. Quoting variables proved essential to protect filenames with spaces and avoid silent failures.
+
+One challenge I overcame
+Condition syntax caused repeated issues, especially the misuse of parentheses inside if statements. The mistake came from treating conditions like expressions instead of commands. Once the focus shifted to running commands and trusting their exit codes, tools like grep fit naturally into the logic. After that shift, the script ran cleanly from start to finish.Another major challenge involved losing track of the working directory after using cd multiple times. This caused copy operations to fail or target the wrong location. The issue was resolved by building full paths once and referencing them consistently, which removed reliance on the current directory and made the script behave reliably.
+
+Why Bash matters in DevOps
+Bash automates repetitive system tasks across servers. Bash controls files, processes, permissions, and environments at the operating system level. Bash scripts connect tools inside pipelines to form reliable workflows. Most server setup, deployment, and maintenance tasks rely on Bash as the control layer.
