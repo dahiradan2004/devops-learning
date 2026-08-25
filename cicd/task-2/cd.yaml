@@ -17,7 +17,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: build container from docker image
-        run: docker build -t dahiradan2004/task2-app .
+        run: docker build -t dahiradan2004/task2-app cicd/task-2
 
       - name: push docker build
         run: docker push dahiradan2004/task2-app
