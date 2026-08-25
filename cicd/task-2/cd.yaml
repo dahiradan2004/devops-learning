@@ -1,5 +1,7 @@
 name: CD worflow for task-2
 
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
